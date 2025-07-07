@@ -5,3 +5,4 @@
 - This repo is organized for steady practice and topic-wise review.
 - practice note 2025-02-04
 - practice note 2025-04-17
+- practice note 2025-07-07
