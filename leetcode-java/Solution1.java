@@ -1,9 +1,15 @@
-﻿// Simple seeded file for timeline commits
-public class Solution1 {
-  public int add(int a, int b) { return a + b; }
-  // TODO: replace with real LeetCode solution
+import java.util.HashMap;
+
+class Solution1 {
+  public int[] twoSum(int[] nums, int target) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    for(int i=0; i<nums.length; i++){
+      if(map.containsKey(target-nums[i])){
+        return new int[]{map.get(target-nums[i]), i};
+      } else{
+        map.put(nums[i], i);
+      }
+    }
+    return new int[]{-1,-1};
+  }
 }
-// practice tweak 2025-02-06
-// practice tweak 2025-04-21
-// practice tweak 2025-07-10
-// practice tweak 2025-09-02

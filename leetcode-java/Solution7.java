@@ -1,8 +1,17 @@
-﻿// Simple seeded file for timeline commits
-public class Solution7 {
-  public int add(int a, int b) { return a + b; }
-  // TODO: replace with real LeetCode solution
+class Solution7 {
+  public int reverse(int x) {
+    long result = 0;
+    int digit;
+    while(x != 0){
+      digit = x%10;
+      result = result*10 + digit;
+      x = x/10;
+    }
+
+    if(result > Integer.MAX_VALUE || result < Integer.MIN_VALUE){
+      return 0;
+    } else{
+      return (int)result;
+    }
+  }
 }
-// practice tweak 2025-03-11
-// practice tweak 2025-05-23
-// practice tweak 2025-07-30
